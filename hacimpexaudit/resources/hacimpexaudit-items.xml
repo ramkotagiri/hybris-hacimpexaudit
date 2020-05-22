@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+ Copyright (c) 2019 SAP SE or an SAP affiliate company. All rights reserved.
+-->
+<!--
+	ATTENTION: This is just an example file. You have to edit it according to your needs.
+-->
+
+<items 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+			xsi:noNamespaceSchemaLocation="items.xsd">
+
+	<itemtypes>
+
+		<itemtype code="HacImpexAudit" autocreate="true"
+				  generate="true" extends="GenericItem"
+				  jaloclass="com.kotagiri.hybris.jalo.HacImpexAudit">
+			<deployment table="HacImpexImportAudit" typecode="30000" />
+			<attributes>
+				<attribute qualifier="user" type="User">
+					<modifiers unique="true" optional="false" search="true" write="true" />
+					<persistence type="property"></persistence>
+				</attribute>
+				<attribute qualifier="media" type="ImpexMedia">
+					<modifiers unique="true" optional="false" search="true" write="true" />
+					<persistence type="property"></persistence>
+				</attribute>
+			</attributes>
+		</itemtype>
+
+	</itemtypes>
+</items>
