@@ -26,9 +26,9 @@
                       
         
         <webmodule jspcompile="false" webroot="/hacimpexaudit"/>
-                					
-	
-        
+
+
+        <meta key="backoffice-module" value="true"/>
            
     
     </extension>
